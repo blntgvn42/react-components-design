@@ -4,10 +4,10 @@ import "./Header.scoped.scss";
 
 function HeaderMenu() {
   const pages = [
-    { to: "/", title: "home" },
-    { to: "/contact", title: "contact" },
-    { to: "/about-us", title: "about us" },
-    { to: "/references", title: "references" },
+    { to: "/header", title: "home" },
+    { to: "/header", title: "contact" },
+    { to: "/header", title: "about us" },
+    { to: "/header", title: "references" },
   ];
 
   return (

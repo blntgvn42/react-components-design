@@ -4,8 +4,8 @@ import "./Header.scoped.scss";
 
 function HeaderAuth() {
   const pages = [
-    { to: "/sign-in", title: "sign in" },
-    { to: "/sign-up", title: "sign up" },
+    { to: "/header", title: "sign in" },
+    { to: "/header", title: "sign up" },
   ];
   return (
     <ul className="header__auth">
