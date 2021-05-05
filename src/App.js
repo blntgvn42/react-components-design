@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import Modal from "./components/Modal/Modal";
@@ -11,6 +11,9 @@ function App() {
         <Route path="/header" component={Header} />
         <Route path="/" component={Home} />
       </Switch>
+      <Link to="/" className="goBack">
+        Go Back
+      </Link>
     </div>
   );
 }
