@@ -1,0 +1,49 @@
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+
+  &>* {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &--spin {
+    border: solid .5rem;
+    border-color: black black black transparent;
+    animation: rotate360 1s infinite linear;
+
+    &-dotted {
+      border: dotted .35rem;
+      border-color: black black black transparent;
+      animation: rotate360 1s infinite linear;
+    }
+
+    &-double {
+      border: double .35rem;
+      border-color: black black black transparent;
+      animation: rotate360 1s infinite linear;
+    }
+  }
+
+  &--ease-spin {
+    border: solid .5rem;
+    border-color: black transparent black transparent;
+    animation: rotate360 1s infinite linear;
+  }
+
+  &--radar {
+    background: conic-gradient(white, black);
+    animation: rotate360 1s infinite linear;
+  }
+}
+
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}

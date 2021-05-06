@@ -8,6 +8,7 @@ function Home() {
       <Link to="header">Header Component</Link>
       <Link to="modal">Modal Component</Link>
       <Link to="button">Button Component</Link>
+      <Link to="spinner">Spinner Component</Link>
     </div>
   );
 }
