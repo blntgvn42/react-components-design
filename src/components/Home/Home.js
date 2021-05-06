@@ -7,6 +7,7 @@ function Home() {
     <div className="home">
       <Link to="header">Header Component</Link>
       <Link to="modal">Modal Component</Link>
+      <Link to="button">Button Component</Link>
     </div>
   );
 }

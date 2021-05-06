@@ -1,0 +1,52 @@
+$colors: ("blue":#0E6EB8, "brown": #A52A2A, "cyan": #0dcaf0, "green": #016936,
+  "grey": #A0A0A0, "indigo": #6610f2, "olive": #32CD32, "orange": #fd7e14,
+  "pink": #d63384, "purple": #6f42c1, "red": #dc3545, "teal": #008080,
+  "violet": #EE82EE, "yellow": #FFD700);
+
+.button {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  *:not(button) {
+    font-size: 1.5rem;
+  }
+
+  .button__normal,
+  .button__outlined {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: .5rem;
+      cursor: pointer;
+      transition: transform .25s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @each $name,
+  $code in $colors {
+    &__#{$name} {
+      background-color: $code;
+    }
+
+    &__#{$name}.outlined {
+      background-color: #fff;
+      box-shadow: 0 0 .5rem $code;
+    }
+  }
+}
