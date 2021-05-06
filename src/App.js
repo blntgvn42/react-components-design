@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Modal from "./components/Modal/Modal";
 import Button from "./components/Button/Button";
 import Spinner from "./components/Spinner/Spinner";
+import Url from "./components/Url/Url";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/modal" component={Modal} />
         <Route path="/button" component={Button} />
         <Route path="/spinner" component={Spinner} />
+        <Route path="/url" component={Url} />
         <Route path="/" component={Home} />
       </Switch>
       <Link to="/" className="goBack">
