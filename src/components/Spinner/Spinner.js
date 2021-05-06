@@ -2,13 +2,19 @@ import React from "react";
 import "./Spinner.scoped.scss";
 
 function Spinner() {
+  const spinnerTypes = [
+    "spin",
+    "spin-dotted",
+    "spin-double",
+    "ease-spin",
+    "radar",
+  ];
+
   return (
     <div className="spinner">
-      <div className="spinner--spin" />
-      <div className="spinner--spin-dotted" />
-      <div className="spinner--spin-double" />
-      <div className="spinner--ease-spin" />
-      <div className="spinner--radar" />
+      {spinnerTypes.map((spinner) => (
+        <div className={`spinner--${spinner}`} />
+      ))}
     </div>
   );
 }
